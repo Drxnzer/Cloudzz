@@ -18,14 +18,10 @@ class stats extends AvonCommand{
             const users = await client.shard.broadcastEval(c => c.guilds.cache.filter(x => x.available).reduce((a, g) =>a + g.memberCount, 0)).then(r => r.reduce((acc, memberCount) => acc + memberCount, 0))
         let uptime = moment.duration(message.client.uptime).format(`D[days], H[hrs], m[mins], s[secs]`);
         let embed = new EmbedBuilder().setColor(client.config.color).setAuthor({name : ` ${client.user.username} Information` , iconURL : client.user.displayAvatarURL()}).setDescription(
-           `❯ **Name :** [**${client.user.username}**](${client.config.invite})
-            ❯ **Servers :** ${servers} 
-            ❯ **Users :** ${users}
-            ❯ **Discord.js :** 14.7.1
-            ❯ **Uptime :** ${uptime}`
+           `❯ **Name :** [**${client.user.username}**](${client.config.invite})\n❯ **Servers :** ${servers} \n❯ **Users :** ${users}\n❯ **Discord.js :** 14.7.1\n❯ **Uptime :** ${uptime}`
         ).addFields([
-            {name : `${client.emoji.owner} __DEVELOPERS__` , value : `ScienceGear#5343`},
-            {name : `${client.emoji.admin} __ADMIN__` , value : `AZERTY#5913`}
+            {name : `${client.emoji.owner} __DEVELOPERS__` , value : `[Storm xd ⸝⸝   ♡](https://discord.com/users/940067342434599033)`},
+            {name : `${client.emoji.admin} __ADMIN__` , value : `[Storm xd ⸝⸝   ♡](https://discord.com/users/940067342434599033)`}
         ]).setThumbnail(client.user.displayAvatarURL()).setFooter({text : `Requested By : ${message.author.tag}` , iconURL : message.author.displayAvatarURL({dynamic : true})});
 
         let b1 = new ButtonBuilder().setStyle(ButtonStyle.Danger).setLabel(`${Math.round(client.ws.ping)} ms`).setDisabled(true).setCustomId(`lolok`);

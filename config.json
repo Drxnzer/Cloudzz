@@ -1,24 +1,25 @@
 {
-    "repl_user": false,
-    "token" : "",
-    "prefix" : "$",
-    "color" : "#c50632",
-    "owners" : ["900708551805268019"],
-    "mongourl" : "",
+    "repl_user": true,
+    "token" : "MTIxMDEyMjI0MDg2MDEwMjc1Ng.GTtu2Y.asBxp3HcIHSGATK5-Nva8sdkPgyDOd40bcQ6rw",
+    "prefix" : ">",
+    "color" : "#880808",
+    "owners" : ["940067342434599033"],
+    "mongourl" : "mongourl",
 
     "errors" : "",
-    "spotifyId" : "",
-    "mongourl2" : "",
-    "spotifySecret" : "",
+    "mongourl2" : "mongodb+srv://arjunn:premiumop123@cluster0.dpw1dmi.mongodb.net/?retryWrites=true&w=majority",
+    "spotifySecret" : "498f461b962443cfaf9539c610e2ea81",
     "topggapi" : "",
-    "server" : "https://dsc.gg/sciencegear",
-    "vote" : "https://dsc.gg/sciencegear",
-    "invite" : "https://discord.com/api/oauth2/authorize?client_id=1122883732303511583&permissions=8&scope=applications.commands%20bot",
-    "nodes" : [{
-       "name" : "LavaLink",
-        "host" : "192.168.1.250",
-        "port" : 25568,
-        "password" : "gearjindabad",
-        "secure" : false
-    }]
+    "server" : "https://discord.gg/3Khp9KedDq",
+    "vote" : "https://discord.gg/3Khp9KedDqt",
+    "invite" : "https://discord.com/api/oauth2/authorize?client_id=1157185978876829750&permissions=8&scope=applications.commands%20bot",
+    "nodes": [
+        {
+            "name": "LavaLink",
+            "host": "lava.link",
+            "port": 80,
+            "password": "CodeX",
+            "secure": false
+        }
+    ]
 }

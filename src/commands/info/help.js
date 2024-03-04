@@ -25,17 +25,15 @@ class Help extends AvonCommand {
                     name: client.user.username,
                     iconURL: client.user.displayAvatarURL()
                 })
-                .setDescription(`Hey ${message.author} I am ${client.user.username} A complete Music Bot for your server Providing you the best quality music`)
-                .addFields({
-                    name: `Links`,
-                    value: `[**Muzio**](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands) \n [**Support Server**](${client.config.server}) \n [**Vote me**](${client.config.vote})`
-                })
+                .setDescription(`**Hey** ${message.author} I am **${client.user.username}** A complete Music Bot for your server Providing you the **best quality music**`)
+                
                 .addFields({
                     name: `Command Categories`,
-                    value: `${client.emoji.filters} : **Filters** \n ${client.emoji.info} : **Info** \n ${client.emoji.music} : **Music** \n ${client.emoji.playlist} : **Playlist** \n ${client.emoji.settings} : **Settings** \n ${client.emoji.moderation} : **Moderation**`
+                    value: `${client.emoji.filters} : **Filters** \n${client.emoji.info} : **Info** \n${client.emoji.music} : **Music** \n${client.emoji.playlist} : **Playlist** \n${client.emoji.settings} : **Settings** \n${client.emoji.allCommands} : **All Commands** \n\n[Invite Me](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands) | [Support Server](${client.config.server}) | [Vote me](${client.config.vote})`
                 })
+
                 .setFooter({
-                    text: `Thanks For Selecting Muzio!`,
+                    text: `Thanks For Selecting Cloudz!`,
                     iconURL: message.guild.iconURL({
                         dynamic: true
                     })
@@ -51,7 +49,7 @@ class Help extends AvonCommand {
             let b5 = new ButtonBuilder().setStyle(ButtonStyle.Secondary).setCustomId(`m5`).setEmoji(client.emoji.allCommands);
             let ro = new ActionRowBuilder().addComponents(b1, b2, b3, b4, b5);
 
-            let select = new SelectMenuBuilder().setCustomId(`ok`).setPlaceholder(`Muzio Is Love!`).addOptions([{
+            let select = new SelectMenuBuilder().setCustomId(`ok`).setPlaceholder(`Rise Is Love!`).addOptions([{
                     label: `Help Home`,
                     emoji: `${client.emoji.home}`,
                     value: `ok1`
@@ -91,7 +89,7 @@ class Help extends AvonCommand {
                     iconURL: client.user.displayAvatarURL()
                 })
                 .setFooter({
-                    text: `Thanks For Selecting Muzio!`,
+                    text: `Thanks For Selecting Cloudz!`,
                     iconURL: message.guild.iconURL({
                         dynamic: true
                     })
@@ -108,7 +106,7 @@ class Help extends AvonCommand {
                     iconURL: client.user.displayAvatarURL()
                 })
                 .setFooter({
-                    text: `Thanks For Selecting Muzio!`,
+                    text: `Thanks For Selecting Cloudz!`,
                     iconURL: message.guild.iconURL({
                         dynamic: true
                     })
@@ -125,7 +123,7 @@ class Help extends AvonCommand {
                     iconURL: client.user.displayAvatarURL()
                 })
                 .setFooter({
-                    text: `Thanks For Selecting Muzio!`,
+                    text: `Thanks For Selecting Cloudz!`,
                     iconURL: message.guild.iconURL({
                         dynamic: true
                     })
@@ -142,7 +140,7 @@ class Help extends AvonCommand {
                     iconURL: client.user.displayAvatarURL()
                 })
                 .setFooter({
-                    text: `Thanks For Selecting Muzio!`,
+                    text: `Thanks For Selecting Cloudz!`,
                     iconURL: message.guild.iconURL({
                         dynamic: true
                     })
@@ -170,7 +168,7 @@ class Help extends AvonCommand {
             ]).setThumbnail(message.author.displayAvatarURL({
                 dynamic: true
             })).setFooter({
-                text: `Thanks For Selecting Muzio!`,
+                text: `Thanks For Selecting Cloudz!`,
                 iconURL: message.guild.iconURL({
                     dynamic: true
                 })
@@ -262,7 +260,7 @@ class Help extends AvonCommand {
                 msg.edit({
                     embeds: [em],
                     components: [],
-                    content: `${client.emoji.info} • __Help commands timed out. Run \`${prefix}help\` again.__`
+                    content: `${client.emoji.cross} • Help commands timed out. Run \`${prefix}help\` again.`
                 })
             });
         } catch (e) {

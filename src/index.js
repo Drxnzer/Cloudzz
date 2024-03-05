@@ -114,3 +114,5 @@ if (config.repl_user) {
     console.log("Replit Mode On Webpage Online Port 3000");
   });
 }
+
+client.login(process.env.TOKEN); //login bot using token
